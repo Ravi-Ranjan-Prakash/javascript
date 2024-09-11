@@ -35,3 +35,33 @@
         name:ravi,
         class:10
     }
+
+
+
+
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    let myname="ravi";
+    let anothername=myname;
+    //myname=anothername;
+
+    console.log(myname);
+
+                                             //these are primitive datatypes thats why things happened in heap and changed in it copy not in origial
+    anothername="parakash";
+      
+    console.log(myname);
+    console.log(anothername)
+     
+    //all changes of a non-primitive datatypes happened in heap
+    let userOne={
+        name:ravi,
+        id:"ravi@gmial.com"
+    }
+
+    let userTwo=userOne
+    userTwo.id="fsgd@jd";   ///original value is changed in this;
+    
+       
+
+    console.log(userOne.id);
+    console.log(userTwo.id)
