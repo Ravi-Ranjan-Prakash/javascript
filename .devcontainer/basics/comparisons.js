@@ -20,4 +20,4 @@ console.log(null>=0);         //true
 //these are the limitations of javascript as sometimes they take value of null as "NaN"  but sometimes zero
 // "===" tripeequalto not only compares the value but they also check the datatypes
 
-console.log("3"===3);
+console.log("3"===3);  //false
