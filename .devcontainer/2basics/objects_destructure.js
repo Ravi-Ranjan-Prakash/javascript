@@ -43,6 +43,7 @@ console.log(e);
  //generally you get the data from api in form of arrays and are in jason format
  //json-javascript object notation
  //all the api are jason format
+ //we have to send object always in jason format
  
  [
     {},
