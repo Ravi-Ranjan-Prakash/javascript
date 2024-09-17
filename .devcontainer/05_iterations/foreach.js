@@ -27,8 +27,8 @@ coding.forEach((item,index,arr)=>{
     console.log(item,index,arr);
 })
 
-//mainly for loop will be used we we want to access the data from database 
-//genarally we get the dta in form of array having objects
+//mainly for-each loop will be used we we want to access the data from database 
+//genarally we get the data in form of array having objects
 //lets learn how to do that
 
 const languages=[
