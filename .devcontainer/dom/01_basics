@@ -1,0 +1,22 @@
+
+//DOM stands for document object model
+//it is basically the sturcture of the webpage means you have make javscript using which document 
+//generally we cam inject objects in document 
+
+//document is basically an property of window
+
+//lets see the structure of DOM
+
+
+                                       window
+                                          |
+                                       document
+                                          |
+                                        HTML
+                                        /   \
+                                      head    body
+                                      /  \      |
+                                                |                                    
+                                     /    \     div 
+                                   title  meta    / \
+                                                 h1  p
