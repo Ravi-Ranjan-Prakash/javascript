@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manupulation</title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //lets try to add list elements in list
+     function addlanguage(langname){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li);
+     }
+
+     addlanguage('typescript');
+     addlanguage('java')
+
+     //lets try to edit existing lists or anything
+
+     const secondlan=document.querySelector("li:nth-child(2)");
+     //secondlan.innerHTML("golan")                               //this can also be used but u can optimise it
+     const newli=document.createElement('li');
+     newli.textContent="mojo";
+     secondlan.replaceWith(newli);
+
+
+    // lets see another approach using outerhtml
+    const firstlan=document.querySelector("li:first-child");
+    firstlan.outerHTML='<li>typescript</li>'
+
+    //remove the element
+    const lastlan=document.querySelector('li:last-child');
+    lastlan.remove();
+
+    
+</script>
+</html>
